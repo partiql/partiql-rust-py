@@ -32,6 +32,8 @@ Thank you to all who have contributed!
 
 ### Added
 - Initializes `v0.0.0` and adds a minimal `eval` API that allows evaluation of PartiQL queries in Python using [partiql-lang-rust](https://github.com/partiql/partiql-lang-rust).
+- Adds `partiql_rust_py_test` python module for usage and integration testing purposes. 
+
 
 ### Fixes
 
