@@ -1,0 +1,22 @@
+[package]
+name = "partiql-rust-py"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "partiql_rust_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.19.0"
+
+partiql-parser = { git = "https://github.com/partiql/partiql-lang-rust.git", features=["serde"] }
+partiql-value = {  git = "https://github.com/partiql/partiql-lang-rust.git", features=["serde"] }
+partiql-logical = {  git = "https://github.com/partiql/partiql-lang-rust.git", features=["serde"] }
+partiql-catalog = { git = "https://github.com/partiql/partiql-lang-rust.git" }
+partiql-logical-planner = {  git = "https://github.com/partiql/partiql-lang-rust.git" }
+partiql-eval = { git = "https://github.com/partiql/partiql-lang-rust.git" }
+partiql-extension-ion = {  git = "https://github.com/partiql/partiql-lang-rust.git" }
+
+ion-rs = "0.18"
